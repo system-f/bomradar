@@ -6,7 +6,13 @@ mkDerivation {
   pname = "bomradar";
   version = "0.1.0.0";
   src = ./.;
+  isLibrary = true;
+  isExecutable = true;
   libraryHaskellDepends = [
+    base containers directory filepath HTTP lens mtl network-uri
+    process semigroupoids transformers
+  ];
+  executableHaskellDepends = [
     base containers directory filepath HTTP lens mtl network-uri
     process semigroupoids transformers
   ];
