@@ -10,7 +10,7 @@
             "hidden": false,
             "description": "bomradar",
             "nixexprinput": "bomradar",
-            "nixexprpath": "release.nix",
+            "nixexprpath": "ci/release.nix",
             "checkinterval": 300,
             "schedulingshares": 1,
             "enableemail": false,
