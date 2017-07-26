@@ -1,0 +1,15 @@
+{
+    "enabled": 1,
+    "hidden": false,
+    "description": "jobsets",
+    "nixexprinput": "bomradar",
+    "nixexprpath": "jobsets.nix",
+    "checkinterval": 300,
+    "schedulingshares": 1,
+    "enableemail": false,
+    "emailoverride": "",
+    "keepnr": 5,
+    "inputs": {
+        "bomradar": { "type": "git", "value": "https://github.com/qfpl/bomradar", "emailresponsible": false },
+    }
+}
