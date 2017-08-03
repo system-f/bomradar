@@ -19,7 +19,7 @@ let
 
   modifiedHaskellPackages = haskellPackages.override {
     overrides = self: super: {
-      exitcode = super.callCabal2nix "exitcode" sources.exitcode {};
+      exitcode = import sources.exitcode {};
     };
   };
 
