@@ -12,14 +12,14 @@ let
     exitcode = pkgs.fetchFromGitHub {
       owner = "qfpl";
       repo = "exitcode";
-      rev = "9ecee5b3a21a29a92aba9c1b9a73cdcb8ae20d32";
-      sha256 = "0svjhvrl5rfqf7vddi8jb4k65jdv44m7vmm33f9nfhgjpcjc22pj";
+      rev = "e56313946fdfe77eed91c54d791b7be8aa73c495";
+      sha256 = "0a2nnk9ifaln0v9dq0wgdazqxika0j32vv8p6s4qsrpfs2kxaqar";
     };
   };
 
   modifiedHaskellPackages = haskellPackages.override {
     overrides = self: super: {
-      exitcode = import sources.exitcode {};
+      exitcode = import sources.exitcode { inherit nixpkgs compiler; };
     };
   };
 
