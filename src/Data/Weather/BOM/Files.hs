@@ -2,6 +2,8 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE FunctionalDependencies #-}
 {-# LANGUAGE FlexibleInstances #-}
+-- See https://github.com/haskell/haddock/issues/565
+{-# OPTIONS_HADDOCK prune #-}
 
 module Data.Weather.BOM.Files where
 
