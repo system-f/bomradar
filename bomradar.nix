@@ -1,5 +1,5 @@
-{ mkDerivation, base, checkers, containers, directory, filepath
-, HTTP, lens, mtl, network-uri, process, QuickCheck, semigroupoids
+{ mkDerivation, base, checkers, containers, directory, exitcode
+, filepath, HTTP, lens, mtl, network-uri, process, QuickCheck
 , stdenv, tasty, tasty-hunit, tasty-quickcheck, transformers
 }:
 mkDerivation {
@@ -9,12 +9,12 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   libraryHaskellDepends = [
-    base containers directory filepath HTTP lens mtl network-uri
-    process semigroupoids transformers
+    base containers directory exitcode filepath HTTP lens mtl
+    network-uri process transformers
   ];
   executableHaskellDepends = [
-    base containers directory filepath HTTP lens mtl network-uri
-    process semigroupoids transformers
+    base containers directory exitcode filepath HTTP lens mtl
+    network-uri process transformers
   ];
   testHaskellDepends = [
     base checkers lens QuickCheck tasty tasty-hunit tasty-quickcheck
