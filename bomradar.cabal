@@ -10,7 +10,7 @@ maintainer:          Queensland Functional Programming Lab oᴉ˙ldɟb@llǝʞsɐ
 copyright:           Copyright (C) 2017 Commonwealth Scientific and Industrial Research Organisation (CSIRO)
 category:            Data
 build-type:          Simple
-extra-source-files:  changelog
+-- extra-source-files:  changelog
 cabal-version:       >=1.10
 homepage:            https://github.com/qfpl/bomradar
 bug-reports:         https://github.com/qfpl/bomradar/issues
