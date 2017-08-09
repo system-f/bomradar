@@ -12,8 +12,8 @@ let
     exitcode = pkgs.fetchFromGitHub {
       owner = "qfpl";
       repo = "exitcode";
-      rev = "e56313946fdfe77eed91c54d791b7be8aa73c495";
-      sha256 = "0a2nnk9ifaln0v9dq0wgdazqxika0j32vv8p6s4qsrpfs2kxaqar";
+      rev = "758639382d38a6afff6c5d2e4f37b600932f5f3a";
+      sha256 = "01qbh7kcf6h0ilrfivknfm226x48xmn1gx348aqkgrc2x1l4z8g6";
     };
   };
 
