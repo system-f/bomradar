@@ -4,13 +4,13 @@ synopsis:            BOM weather radar
 description:         BOM weather radar
 homepage:            https://github.com/qfpl/bomradar
 license:             BSD3
-license-file:        LICENSE
+license-file:        LICENCE
 author:              QFPL
 maintainer:          Queensland Functional Programming Lab oᴉ˙ldɟb@llǝʞsɐɥ
 copyright:           Copyright (C) 2017 Commonwealth Scientific and Industrial Research Organisation (CSIRO)
 category:            Data
 build-type:          Simple
--- extra-source-files:  changelog
+extra-source-files:  changelog.md
 cabal-version:       >=1.10
 homepage:            https://github.com/qfpl/bomradar
 bug-reports:         https://github.com/qfpl/bomradar/issues
