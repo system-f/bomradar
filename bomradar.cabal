@@ -34,12 +34,12 @@ library
                      , Data.Weather.BOM.Transparency
                      , Data.Weather.BOM.Util
 
-  build-depends:       base >=4.8 && <4.11
+  build-depends:       base >=4.8 && <4.13
                      , containers
                      , directory
                      , filepath
                      , HTTP
-                     , lens >=4.15 && <4.16
+                     , lens >=4.15 && <4.18
                      , mtl >=2.2 && <2.3
                      , network-uri
                      , process
@@ -60,12 +60,12 @@ executable bomradar
                     Main.hs
 
   build-depends:
-                      base >=4.8 && <4.11
+                      base >=4.8 && <4.13
                     , containers
                     , directory
                     , filepath
                     , HTTP
-                    , lens >=4.15 && <4.16
+                    , lens >=4.15 && <4.18
                     , mtl >=2.2 && <2.3
                     , network-uri
                     , process
@@ -78,14 +78,14 @@ executable bomradar
                     Data.Weather.BOM
 
 test-suite             tests
-  build-depends:       QuickCheck >=2.9.2 && <2.11
-                     , base >=4.8 && <4.11
+  build-depends:       QuickCheck >=2.9.2 && <2.13
+                     , base >=4.8 && <4.13
                      , checkers >=0.4.6 && <0.5
                      , bomradar
-                     , lens >=4.15 && <4.16
-                     , tasty >=0.11 && <0.12
-                     , tasty-hunit >=0.9 && <0.10
-                     , tasty-quickcheck >=0.8.4 && <0.10
+                     , lens >=4.15 && <4.18
+                     , tasty >=0.11 && <1.2
+                     , tasty-hunit >=0.9 && <0.11
+                     , tasty-quickcheck >=0.8.4 && <0.11
   type:                exitcode-stdio-1.0
   main-is:             Tests.hs
   hs-source-dirs:      test
