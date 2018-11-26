@@ -8,6 +8,8 @@
 module Data.Weather.BOM.Files where
 
 import Control.Lens
+import Data.Semigroup (Semigroup ((<>)))
+import Data.Monoid (Monoid (mappend, mempty))
 import Data.Weather.BOM.File
 
 data Files a b =
@@ -31,11 +33,14 @@ instance Functor (Files a) where
   fmap f (Files a b) =
     Files a (f b)
 
-instance Monoid b => Monoid (Files a b) where
-  Files a1 b1 `mappend` Files a2 b2 =
+instance Semigroup b => Semigroup (Files a b) where
+  Files a1 b1 <> Files a2 b2 =
     Files
-      (a1 `mappend` a2)
-      (b1 `mappend` b2)
+      (a1 <> a2)
+      (b1 <> b2)
+
+instance (Semigroup b, Monoid b) => Monoid (Files a b) where
+  mappend = (<>)
   mempty =
     Files
       mempty
