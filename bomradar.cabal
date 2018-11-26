@@ -1,8 +1,7 @@
 name:                bomradar
 version:             0.1.0.0
 synopsis:            BOM weather radar
-description:         BOM weather radar
-homepage:            https://github.com/qfpl/bomradar
+description:         BOM weather radar.
 license:             BSD3
 license-file:        LICENCE
 author:              QFPL
